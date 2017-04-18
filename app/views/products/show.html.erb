@@ -1,2 +1,8 @@
-<h1>Products#show</h1>
-<p>Find me in app/views/products/show.html.erb</p>
+<div class="container" style="padding-top:50px">
+    <p> Name: <%= @product.name %> </p>
+    <p> Category: <%= @product.category %> </p>
+    <p> Sold_out: <%= @product.sold_out %> </p>
+    <p> Color: <%= @product.color %> </p>
+    <%= link_to "Edit", edit_product_path %>
+    <%= link_to "Delete", method: :delete %>
+</div>

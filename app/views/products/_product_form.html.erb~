@@ -1,0 +1,18 @@
+
+<% form_for :product do |f| %>
+    
+    <%= f.label 'Name' %>
+    <%= f.text_field :name %>
+
+    <%= f.label 'Category' %>
+    <%= f.text_field :category %>
+
+    <%= f.label 'Color' %>
+    <%= f.text_field :color %>
+
+    <%= f.label 'Sold Out' %>
+    <%= f.text_field :sold_out %>
+    
+    <%= f.submit %> 
+<% end %>
+   
